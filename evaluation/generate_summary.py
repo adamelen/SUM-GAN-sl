@@ -2,7 +2,6 @@ import numpy as np
 from knapsack_implementation import knapSack
 
 def generate_summary(all_shot_bound, all_scores, all_nframes, all_positions): 
-    # each shot includes frames in the interval: [ cps[i], cps[i+1] )
     all_summaries = []
     for video_index in range(len(all_scores)):
     	# Get shots' boundaries
