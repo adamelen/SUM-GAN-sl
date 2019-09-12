@@ -39,7 +39,7 @@ def generate_summary(all_shot_bound, all_scores, all_nframes, all_positions):
 	    # Select one frame from each selected shot, the one with the bigger score
         summary = np.zeros(shot[1]+1, dtype=np.int8)
         for shot in selected:
-            summary[shot_bound[shot][0]:shot_bound[shot][1]] = 1
+            summary[shot_bound[shot][0]:shot_bound[shot][1]+1] = 1
 	
         all_summaries.append(summary)
 		
